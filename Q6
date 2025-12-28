@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int n, toplam = 0;
+    printf("Bir n sayisi giriniz: ");
+    scanf("%d", &n);
+    for(int i = 1; i <= n; i++) {
+        printf("%d ", i);
+        toplam += i;
+    }
+    printf("\nToplam: %d\n", toplam);
+    return 0;
+}
