@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int secim;
+    while(1) {
+        printf("\n--- MENU ---\n1. Topla\n2. Cikar\n3. Cikis\nSecim: ");
+        scanf("%d", &secim);
+        if(secim == 3) break;
+        int a, b;
+        printf("Iki sayi giriniz: ");
+        scanf("%d %d", &a, &b);
+        if(secim == 1) printf("Sonuc: %d\n", a+b);
+        else if(secim == 2) printf("Sonuc: %d\n", a-b);
+    }
+    return 0;
+}
